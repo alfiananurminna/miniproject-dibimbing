@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project Dibimbing</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- CSS dan JS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navigasi Bar -->
+    <nav class="navbar">
+        <h3>It's Wear</h3>
+
+        <div class="navbar-menu">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#katalog">CATALOGUE</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+
+        <div class="navbar-icon">
+            <a href="#" id="search"> <i data-feather="search"></i> </a>
+            <a href="#" id="shopping-cart"> <i data-feather="shopping-cart"></i> </a>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <main class="home-page">
+            <h2>Let's Explore</h2>
+            <h1>2025 NEW COLLECTION</h1>
+            <a href="#katalog">Shop Now</a>
+        </main>
+    </section>
+
+    <!-- About -->
+     <section class="about" id="about">
+        <div class="about-page">
+            <p>It's Wear since 2000, offering high-quality clothing with trendy designs at affordable prices.
+                <br>We are committed to providing the best shopping experience for our customers.</p>
+        </div>
+
+        <div class="about-icon">
+            <div class="aicon">
+                <h3>FREE DELIVERY</h3>
+                <i data-feather="truck"></i>
+                <p>Free Delivery All Indonesia</p>
+            </div>
+
+            <div class="aicon">
+                <h3>FAST RESPON 1/24</h3>
+                <i data-feather="phone"></i> 
+                <p>Active Customer Service</p>
+            </div>
+
+            <div class="aicon">
+                <h3>GUARANTEED PACKAGING</h3>
+                <i data-feather="package"></i>
+                <p>Easy and Fast Return</p>
+            </div>
+
+            <div class="aicon">
+                <h3>SECURE PAYMENT</h3>
+                <i data-feather="credit-card"></i>
+                <p>100% Secure Payments</p>
+            </div>
+        </div>
+
+        <h4>-Categories-</h4>
+
+        <div class="kategori-page">
+            <div class="kategori-image">
+                <img src="image/dress.png" alt="">
+                <p class="kategori-image-title">Dress</p>
+            </div>
+            
+            <div class="kategori-image">
+                <img src="image/rok.png" alt="">
+                <p class="kategori-image-title">Skirt</p>
+            </div>
+
+            <div class="kategori-image">
+                <img src="image/tas.png" alt="">
+                <p class="kategori-image-title">Bag</p>
+            </div>
+
+            <div class="kategori-image">
+                <img src="image/topi.png" alt="">
+                <p class="kategori-image-title">Accessories</p>
+            </div>
+        </div>
+
+     </section>
+
+    <!-- Catalogue -->
+     <section class="katalog" id="katalog">
+        <h3>Most Populer</h3>
+
+        <div class="katalog-page">
+            <div class="katalog-image">
+                <img src="image/model1.jpg" alt="">
+                <h4 class="katalog-image-title">Blue Long Dress</h4>
+                <p>IDR 1.499.900</p>
+            </div>
+
+            <div class="katalog-image">
+                <img src="image/model2.jpg" alt="">
+                <h4 class="katalog-image-title">Retro Summer Bag</h4>
+                <p>IDR 179.900</p>
+            </div>
+
+            <div class="katalog-image">
+                <img src="image/model3.jpg" alt="">
+                <h4 class="katalog-image-title">Anemone Skirt</h4>
+                <p>IDR 799.900</p>
+            </div>
+
+            <div class="katalog-image">
+                <img src="image/model4.jpg" alt="">
+                <h4 class="katalog-image-title">Mallorca Straw Hat</h4>
+                <p>IDR 99.900</p>
+            </div>
+
+            <div class="katalog-image">
+                <img src="image/model5.jpg" alt="">
+                <h4 class="katalog-image-title">Gypsophila Outwear</h4>
+                <p>IDR 549.900</p>
+            </div>
+        </div>   
+
+        <div class="action">
+            <h2>GET 25% OFF YOUR FIRST ORDER</h2>
+            <p>Subscribe to get special offers, free giveaways, and one-in-a-lifetime deals.</p>
+
+            <form class="sub-input">
+                <div class="action-input">
+                    <input type="text" placeholder="Enter your Email" name="email" id="email"
+                    required>
+                    <i data-feather="mail" class="input-icon"></i>
+                </div>
+                <button type="submit" onclick="kirim()">Register</button>
+            </form>
+        </div>
+     </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-page">
+            <h1>It's Wear</h1>
+            <p>Get up, dress up, and never give up! Cause every woman is a Ladyboss!</p>
+            <h3>Bukit Darmo, Surabaya, Indonesia | +123 987654 | itswear2000@mail.com | @itswear.id</h3>
+        </div>
+
+        <div class="contact-hours">
+            <h4>Business Hours</h4>
+            <p>Monday - Friday: 9 AM - 7 PM</p>
+            <p>Saturday - Sunday: 10 AM - 5 PM</p>
+        </div>
+
+        <div class="contact-support">
+            <h4>Support</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Submit a Return</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 It's Wear || made by @alfiananurminna</p>
+    </footer>
+   
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

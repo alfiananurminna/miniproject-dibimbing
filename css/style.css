@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    min-height: 2900px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigasi */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(190, 185, 175);
+    padding: 1rem 5%;
+    z-index: 9999;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.navbar h3 {
+    font-size: xx-large;
+    color: rgb(90, 35, 0);
+}
+
+.navbar .navbar-menu a {
+    color: black;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+.navbar .navbar-icon a {
+    color: black;
+    margin: 5px;
+}
+
+/* Home */
+
+.home {
+    display: flex;
+    align-items: center;
+    background-image: url('../image/mainbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.home .home-page {
+    align-items: center;
+    justify-items: center;
+    padding: 2rem 10%;
+    max-width: 80rem;
+}
+
+.home-page h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: brown;
+}
+
+.home-page h1 {
+    font-size: 45px;
+    font-weight: 1000;
+    color: brown;
+    margin-bottom: 30px;
+}
+
+.home a {
+    font-size: medium;
+    font-weight: 700;
+    color: black;
+    background-color: beige;
+    padding: 10px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.home a:hover {
+    text-decoration: underline;
+}
+
+/* About */
+
+.about {
+    padding: 5rem;
+    background: linear-gradient(180deg, beige, whitesmoke);
+}
+
+.about-page {
+    text-align: center;
+    justify-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-icon{
+    margin-top: 1.5rem;
+}
+
+.aicon {
+    text-align: center;
+    background-color: rgb(190, 185, 175);
+    padding: 0 10px; 
+    margin: 15px auto; 
+    border-radius: 10px; 
+    width: 300px;
+    height: auto;
+}
+
+.about h3 {
+    font-size: medium;
+    font-weight: 700;
+}
+
+.kategori-page {
+    text-align: center;
+    padding: 1rem 5%;
+}
+
+.about h4 {
+    font-size: x-large;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: brown;
+}
+
+.kategori-page {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.kategori-image {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.kategori-image img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.kategori-image-title {
+    font-size: x-small;
+    margin-top: 3px;
+}
+
+/* Catalogue */
+
+.katalog {
+    padding: 4.5rem 1rem;
+}
+
+.katalog h3 {
+    text-align: center;
+    font-size: xx-large;
+    color: brown;
+    margin-bottom: 5px;
+}
+
+.katalog-page {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    border: 1.5px solid brown;
+    padding: 10px;
+}
+
+.katalog-image {
+    width: 200px;
+    text-align: center;
+}
+
+.katalog-image img {
+    width: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.katalog-image-title {
+    font-size: large;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.katalog-image p {
+    font-size: medium;
+    color: blue;
+    margin-top: 3px;
+}
+
+.action {
+    text-align: center;
+    max-width: 550px;
+    margin: 1rem auto;
+    padding: 10px;
+}
+
+.action h2 {
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.action p {
+    font-size: small;
+    margin-bottom: 15px;
+}
+
+.action-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 10px;
+}
+
+.action-input input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    font-size: small;
+    outline: none;
+    margin: 2.5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.input-icon {
+    position: absolute;
+    right: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.action button {
+    background-color: brown;
+    color: whitesmoke;
+    font-size: small;
+    font-weight: 700;
+    padding: 10px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Contact */
+
+.contact {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../image/contactbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-page {
+    max-width: 800px;
+}
+
+.contact-page h1 {
+    font-size: 50px;
+    color: rgb(90, 35, 0);
+    margin-bottom: 10px;
+}
+
+.contact-page p, .contact-page h3 {
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+.contact-hours {
+    padding: 5px;
+    width: 100%;
+    margin: auto;
+}
+
+.contact-support {
+    padding: 10px;
+    width: 100%;
+    margin: 15px;
+}
+
+.contact-hours h4, .contact-support h4 {
+    font-size: large;
+    margin-bottom: 15px;
+}
+
+.contact-hours p {
+    font-size: medium;
+}
+
+.contact-support a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.contact-support a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgb(190, 185, 175);
+    color:  rgb(90, 35, 0);
+    text-align: center;
+    padding: 5px;
+    font-size: medium;
+    font-weight: 700;
+}
