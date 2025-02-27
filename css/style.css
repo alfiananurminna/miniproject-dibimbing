@@ -54,6 +54,14 @@ html {
     margin: 5px;
 }
 
+.navbar-icon a:hover {
+    color: whitesmoke;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
 /* Home */
 
 .home {
@@ -103,7 +111,7 @@ html {
 /* About */
 
 .about {
-    padding: 5rem;
+    padding: 7rem;
     background: linear-gradient(180deg, beige, whitesmoke);
 }
 
@@ -175,7 +183,7 @@ html {
 /* Catalogue */
 
 .katalog {
-    padding: 4.5rem 1rem;
+    padding: 5.5rem 1rem;
 }
 
 .katalog h3 {
@@ -274,7 +282,7 @@ html {
 /* Contact */
 
 .contact {
-    padding-top: 5rem;
+    padding-top: 5.5rem;
     display: flex;
     flex-direction: column;
     background-image: url('../image/contactbg.jpg');
@@ -341,4 +349,54 @@ footer {
     padding: 5px;
     font-size: medium;
     font-weight: 700;
+}
+
+/* Media Responsive */
+
+/* PC */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tab */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-menu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgb(190, 185, 175);
+        width: 20rem;
+        height: 100vh;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .navbar .navbar-menu.active {
+        right: 0;
+    }
+
+    .navbar .navbar-menu a {
+        display: block;
+        margin: 10px;
+        padding: 5px;
+        font-size: medium;
+        font-weight: 500;
+    }
+
+}
+
+/* HP */
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
 }
